@@ -12,8 +12,8 @@ def push():
     conn = http.client.HTTPSConnection("api.pushover.net:443")
     conn.request("POST", "/1/messages.json",
       urllib.parse.urlencode({
-        "token": "aycvr9zs9qsyfkx3r9sc7xutebogcr",
-        "user": "u1q43c4pq6g7wr63naw8q6a1skbeu1",
+        "token": "", # Creat token on your own
+        "user": "", # User name also, of course
         "message": "Patient fell!",
         "sound": "alien",
       }), { "Content-type": "application/x-www-form-urlencoded" })
